@@ -41,3 +41,7 @@ if __name__ == "__main__":
         strategy=strategy,
         config=fl.server.ServerConfig(num_rounds=5),
     )
+    _, (X_test, y_test) = utils.load_mnist()
+    loss = log_loss(y_test, model.predict_proba(X_test))
+    accuracy = model.score(X_test, y_test)
+    print(loss, accuracy)

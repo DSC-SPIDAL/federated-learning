@@ -1,4 +1,4 @@
-# Flower Linear Classification using sklearn
+# Flower Image Classification using PyTorch
 
 This implementation of Flower uses PyTorch. Project does a distributed federated trainning.
 
